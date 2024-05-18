@@ -1,0 +1,29 @@
+name: "SWaT"
+
+# dataset configuration
+
+x_dim: 51
+
+train_start: 0
+max_train_size: null  # `None` means full train set
+test_start:  0
+max_test_size:  null  # `None` means full test set
+
+window_size: 100
+step: 100
+    
+anomaly_proportion_window: 0.2 # Consider the window as anomaly if it includes this ratio of anomaly points
+anormly_ratio:  0.1  # what ratio of the dataset is anomaly
+
+data_prefix: ${dataset.${environment}.data_prefix}
+save_prefix: ${dataset.${environment}.save_prefix}
+
+
+local:
+  data_prefix: "..."
+  save_prefix: "..."
+  
+hpc:
+  data_prefix: "..."
+  save_prefix: "..."
+  

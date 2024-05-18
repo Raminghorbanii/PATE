@@ -1,0 +1,17 @@
+type: "PatchAD"
+
+base_model_type: "PatchAD" # This is the type of the model in phase 1
+
+#model configuration
+input_size: ${dataset.x_dim}
+n_heads: 1
+
+e_layers: 3
+
+
+#Optimization configuration
+batch_size: 128
+num_epochs: 3
+
+lr: 1e-4
+

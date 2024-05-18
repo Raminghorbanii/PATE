@@ -1,0 +1,24 @@
+# Default configurations
+defaults:
+  - dataset: PSM            # Default dataset setting
+  - model: LSTM # Default model setting
+  - _self_
+  
+  
+  
+# Initialization method for RBF layer
+initialization: "random"
+
+
+# Phase of the experiment
+mode: "main_train"
+
+
+# Seed for reproducibility
+seed: 0
+
+# Execution environment
+environment: local
+
+# Device for training
+device: "auto"

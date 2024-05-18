@@ -1,0 +1,25 @@
+# Default configurations
+defaults:
+  - dataset: SMAP            # Default dataset setting
+  - model: Transformer # Default model setting
+  - _self_
+  
+  
+  
+# Initialization method for RBF layer
+initialization: "random"
+
+
+
+# Phase of the experiment
+mode: "main_train"
+
+
+# Seed for reproducibility
+seed: 0
+
+# Execution environment
+environment: hpc
+
+# Device for training
+device: "auto"

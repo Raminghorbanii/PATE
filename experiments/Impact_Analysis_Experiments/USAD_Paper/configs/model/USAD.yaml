@@ -1,0 +1,10 @@
+type: "USAD"
+
+base_model_type: "USAD" # This is the type of the model in phase 1
+
+#model configuration
+input_size: ${dataset.x_dim}
+
+#Optimization configuration
+batch_size: 512
+

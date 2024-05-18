@@ -1,0 +1,18 @@
+type: "LSTM"
+
+base_model_type: "LSTM" # This is the type of the model in phase 1
+
+#model configuration
+input_size: ${dataset.x_dim}
+hidden_size: 80
+
+
+#Optimization configuration
+batch_size: 128
+num_epochs: 300
+
+lr: 1e-3
+weight_decay: 1e-5
+dropout: 0
+clip_grad: 1
+
