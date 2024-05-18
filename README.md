@@ -8,26 +8,18 @@
 
 This repository contains the code for PATE (Proximity-Aware Time series anomaly Evaluation measure), a novel evaluation metric for assessing anomaly detection in time series data. PATE introduces proximity-based weighting and computes a weighted version of the area under the Precision-Recall curve, offering a more accurate and fair evaluation by considering the temporal relationship between predicted and actual anomalies. The methodology is detailed in our paper, showcasing its effectiveness through experiments with both synthetic and real-world datasets.
  
- 
-## Installation Instructions
 
-### Set Up the Environment
-To use PATE, start by creating and activating a new Conda environment using the following commands:
+## Quick Start
 
-```bash
-conda create --name pate_env python=3.8
-conda activate pate_env
-```
-
-### Install Dependencies
-Install the required Python packages via:
+### Installation
+Install PATE for immediate use in your projects:
 
 ```bash
-pip install -r base_requirements.txt
+pip install PATE
 ```
 
 ## How to use PATE? 
-Utilizing PATE is straightforward. navigate to PATE code directory and begin by importing the PATE module in your Python script:
+Utilizing PATE is straightforward. Begin by importing the PATE module in your Python script:
 
 ```bash
 from PATE_metric import PATE
@@ -42,6 +34,43 @@ pate = PATE(labels, anomaly_scores, binary_scores = False)
 pate_f1 = PATE(labels, binary_anomaly_scores, binary_scores = True)
 ```
 
+### Basic Example
+
+```python 
+
+from PATE_metric import PATE
+
+# Example data setup
+labels = [0, 1, 0, 1, 0]
+scores = [0.1, 0.8, 0.1, 0.9, 0.2]
+
+# Initialize PATE and compute the metric
+pate = PATE(labels, scores, binary_scores = False)
+print(pate)
+```
+
+---
+
+## Advanced Setup and Experiments
+For researchers interested in reproducing the experiments or exploring the evaluation metric further with various data sets:
+
+
+### Environment Setup
+To use PATE, start by creating and activating a new Conda environment using the following commands:
+
+```bash
+conda create --name pate_env python=3.8
+conda activate pate_env
+```
+
+### Install Dependencies
+Install the required Python packages via:
+
+```bash
+git clone https://github.com/raminghorbanii/PATE
+cd PATE
+pip install -r base_requirements.txt
+```
 
 ## Conducting Experiments
 
@@ -61,7 +90,6 @@ Example of how you use PATE using synthetic data (Binary detector):
 ```python
 
 from utils_Synthetic_exp import evaluate_all_metrics, synthetic_generator
-
 
 label_anomaly_ranges = [[40,59]] # You can selec multiple ranges for anomaly. Here we selected one range with the size of 20 points (A_k) 
 predicted_ranges = [[30, 49]]  # You can selec multiple ranges for predictions. Here we selected the range the same as Scenario 2, proposed in the original paper. 
