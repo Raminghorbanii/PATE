@@ -28,7 +28,7 @@ sys.path.append(project_root)
 from metrics.precision_at_k import *
 from metrics.vus.metrics import get_range_vus_roc #Vus
 from metrics.AUCs_Compute import *
-from PATE_metric import PATE
+from pate.PATE_metric import PATE
 
 
 
