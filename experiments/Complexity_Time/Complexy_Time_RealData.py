@@ -16,7 +16,7 @@ except NameError:
 project_root = os.path.dirname(os.path.dirname(current_dir))  # Two levels up
 sys.path.append(project_root)
 
-from PATE_metric import PATE
+from pate.PATE_metric import PATE
 from metrics.vus.metrics import get_range_vus_roc #VUS
 from metrics.AUCs_Compute import *
 
