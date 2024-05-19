@@ -1,5 +1,5 @@
 <p align="center">
-<img width="300" src="./docs/PATE_logo.png"/>
+<img width="300" src="https://github.com/Raminghorbanii/PATE/docs/PATE_logo.png?raw=true"/>
 </p>
 
 
@@ -22,7 +22,7 @@ pip install PATE
 Utilizing PATE is straightforward. Begin by importing the PATE module in your Python script:
 
 ```bash
-from PATE_metric import PATE
+from pate.PATE_metric import PATE
 ```
 
 Prepare your input as arrays of anomaly scores (continues or binary) and binary labels. PATE allows for comprehensive customization of parameters, enabling easy toggling between PATE and PATE-F1 evaluations. Please refer to the main code documentation for a full list of configurable options.
@@ -37,12 +37,12 @@ pate_f1 = PATE(labels, binary_anomaly_scores, binary_scores = True)
 ### Basic Example
 
 ```python 
-
-from PATE_metric import PATE
+import numpy as np
+from pate.PATE_metric import PATE
 
 # Example data setup
-labels = [0, 1, 0, 1, 0]
-scores = [0.1, 0.8, 0.1, 0.9, 0.2]
+labels = np.array([0, 1, 0, 1, 0])
+scores = np.array([0.1, 0.8, 0.1, 0.9, 0.2])
 
 # Initialize PATE and compute the metric
 pate = PATE(labels, scores, binary_scores = False)
@@ -69,7 +69,7 @@ Install the required Python packages via:
 ```bash
 git clone https://github.com/raminghorbanii/PATE
 cd PATE
-pip install -r base_requirements.txt
+pip install -r synthetic_exp_requirements.txt
 ```
 
 ## Conducting Experiments
@@ -176,3 +176,14 @@ Given the context of time series data, selecting a buffer size for a fair evalua
 - *Default Setting*: Utilizes the input window size of the anomaly detector, a standard, practical buffer size that aligns with the general scale of the data being analyzed. This option is useful when no specific adjustments are needed or when minimal configuration is desired.
 
 This guidance ensures that you can effectively implement these buffer size selection strategies in PATE for optimal results.
+
+
+---
+
+## Citation
+
+If you use PATE in your research or in any project, we kindly request that you cite the PATE paper:
+
+```bash
+
+```
