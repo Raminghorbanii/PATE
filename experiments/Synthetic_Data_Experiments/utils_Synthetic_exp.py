@@ -28,8 +28,8 @@ from metrics.eTaPR_pkg import f1_score_etapr
 from metrics.AUCs_Compute import *
 from metrics.Range_Based_PR import *
 
-from PATE_metric import PATE
-from PATE_utils import convert_events_to_array_PATE, categorize_predicted_ranges_with_ids
+from pate.PATE_metric import PATE
+from pate.PATE_utils import convert_events_to_array_PATE, categorize_predicted_ranges_with_ids
 
 
 def evaluate_all_metrics(pred, labels, vus_zone_size = 20, e_buffer=20, d_buffer=20):
