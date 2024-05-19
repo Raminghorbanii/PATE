@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='PATE',
-    version='0.1.0',
+    version='0.1.1',
     author='Ramin Ghorbani',
     author_email='r.ghorbani@tudelft.nl',
     packages=find_packages(include=['pate', 'pate.*']),  # Include only the 'pate' package
@@ -10,7 +10,7 @@ setup(
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     url='https://github.com/Raminghorbanii/PATE',
-    install_requires=open('base_requirements.txt').read().splitlines(),
+    install_requires=open('requirements_pate.txt').read().splitlines(),
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Science/Research',
