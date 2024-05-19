@@ -1,5 +1,5 @@
 <p align="center">
-<img width="300" src="https://github.com/Raminghorbanii/PATE/docs/PATE_logo.png?raw=true"/>
+<img width="300" src="https://github.com/Raminghorbanii/PATE/blob/master/docs/PATE_logo.png?raw=true"/>
 </p>
 
 
