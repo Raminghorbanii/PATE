@@ -5,6 +5,11 @@
 
 <h1 align="center">PATE: Proximity-Aware Time series anomaly Evaluation</h1>
 
+<p align="center">
+  <a href="https://kdd.org/kdd2024/">
+    <img src="https://img.shields.io/badge/KDD-2024-blue.svg" alt="KDD 2024 Accepted">
+  </a>
+</p>
 
 This repository contains the code for PATE (Proximity-Aware Time series anomaly Evaluation measure), a novel evaluation metric for assessing anomaly detection in time series data. PATE introduces proximity-based weighting and computes a weighted version of the area under the Precision-Recall curve, offering a more accurate and fair evaluation by considering the temporal relationship between predicted and actual anomalies. The methodology is detailed in our paper, showcasing its effectiveness through experiments with both synthetic and real-world datasets.
  
