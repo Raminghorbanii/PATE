@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="https://kdd.org/kdd2024/">
-    <img src="https://img.shields.io/badge/KDD-2024-blue.svg" alt="KDD 2024 Accepted">
+    <img src="https://img.shields.io/badge/ACM%20KDD%202024-Accepted-blue.svg" alt="ACM KDD 2024 Accepted">
   </a>
 </p>
 
