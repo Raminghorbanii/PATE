@@ -10,7 +10,7 @@
     <img src="https://img.shields.io/badge/ACM%20KDD%202024-Accepted-blue.svg" alt="ACM KDD 2024 Accepted">
   </a>
   <a href="https://arxiv.org/abs/2405.12096">
-    <img src="https://img.shields.io/badge/Preprint-version-green.svg" alt="Preprint Version">
+    <img src="https://img.shields.io/badge/Preprint version-Arxiv-green.svg" alt="Preprint Version">
   </a>
 </p>
 
