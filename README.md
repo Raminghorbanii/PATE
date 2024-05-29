@@ -189,8 +189,18 @@ This guidance ensures that you can effectively implement these buffer size selec
 ---
 
 ## Citation
+If you find our work is useful in your research, please consider raising a star  :star:  and citing:
 
-If you use PATE in your research or in any project, we kindly request that you cite the PATE paper:
+```
+@article{ghorbani2024pate,
+  title={PATE: Proximity-Aware Time series anomaly Evaluation},
+  author={Ghorbani, Ramin and Reinders, Marcel JT and Tax, David MJ},
+  journal={arXiv preprint arXiv:2405.12096},
+  year={2024}
+}
+```
+
+
 
 ```bash
 
